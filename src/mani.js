@@ -46,5 +46,17 @@ function generatePassword(){
 }
 
 copyIcon.addEventListener('click',()=>{
-    navigator.clipboard.writeText(passBox.value)
+    if (passBox.value != "" || passBox.value.length >= 1){
+        navigator.clipboard.writeText(passBox.value);
+
+
+        copyIcon.innerHTML = "check"
+        copyIcon.title = "passwrod Copied"
+        
+        setTimeout(()=>{
+            copyIcon.innerHTML = 'content_copy'
+            copyIcon.title = ""
+
+        },3000)
+    }
 })
