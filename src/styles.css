@@ -14,3 +14,13 @@ body {
     background: linear-gradient(to right bottom, #ffa585, #45c5d8);
     color : #fff;   
 }
+
+.container {
+    border: .5px solid #fff;
+    border-radius: 10px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: 8px 8px 4px #909090, 8px 8px 0 #575757;
+}
