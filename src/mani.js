@@ -6,6 +6,7 @@ let uppercase = document.getElementById('uppercase')
 let numbers = document.getElementById('numbers')
 let symbols = document.getElementById('symbols')
 let genBtn = document.getElementById('genBtn')
+let copyIcon = document.getElementById('copyIcon')
 
 
 // showing input slider value
@@ -44,4 +45,6 @@ function generatePassword(){
    return genPassword;
 }
 
-console.log('F'.charAt())
+copyIcon.addEventListener('click',()=>{
+    navigator.clipboard.writeText(passBox.value)
+})
