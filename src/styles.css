@@ -30,6 +30,18 @@ body {
     font-size: 1.4rem;
     margin-block: 8px;
 }
+
+.inputBox {
+    position: relative;
+}
+.inputBox span {
+    position: absolute;
+    top : 16px;
+    right : 6px;
+    color : #000;
+    font-size: 28px;
+    cursor: pointer;
+}
 .passBox {
     background-color: #fff;
     border :none;
